@@ -82,10 +82,10 @@ def measure_performance(filename, start_node, end_node, sample_sizes, repetition
     return all_results
 
 if __name__ == "__main__":
-    filename = 'random_16_16_256_final.txt'
-    start_node = 'v4.8.64'
-    end_node = 'v8.4.96'
-    sample_sizes = [1, 1000, 2000, 5000, 7000, 10000, 20000, 50000, 70000, 100000, 150000, 200000, 250000, None]
+    filename = 'grafo_final.txt'
+    start_node = 'v4.8.64' #aqui se configura el origen
+    end_node = 'v8.4.96' #aqui se configura el fin
+    sample_sizes = [1, 1000, 2000, 5000, 7000, 10000, 20000, 50000, 70000, 100000, 150000, 200000, 250000, None] #tamaño para medición
     repetitions = 5  # puedes aumentar si quieres mejor precisión
 
     performance_results = measure_performance(filename, start_node, end_node, sample_sizes, repetitions)
